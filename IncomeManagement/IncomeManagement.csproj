@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69AA2A04-AE39-46AF-A198-C053F9739A67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IncomeManagement</RootNamespace>
+    <AssemblyName>IncomeManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\BLOOD\Desktop\SOFTWARE 2.0\PUBLISHED COPY COMPLETE APPLICATION\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3DF18E26BE03A3892E90A11828669F3135CA53D2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IncomeManagement_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewExpenses.Designer.cs">
+      <DependentUpon>ViewExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewIncome.Designer.cs">
+      <DependentUpon>ViewIncome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income.resx">
+      <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewExpenses.resx">
+      <DependentUpon>ViewExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewIncome.resx">
+      <DependentUpon>ViewIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IncomeManagement_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins-dollar-gold-sign-on-white-background-vector-25530348.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-performance-icon-trendy-flat-vector-performan-white-background-general-collection-illustration-can-be-use-web-130324335.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income-icon-vector-isolated-white-background-logo-concept-income-icon-vector-isolated-white-background-logo-concept-125781266.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cost-reduction-outline-icon-clipart-image-isolated-white-background-174417411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line-cash-dollar-money-icon-on-white-background-vector-17683123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1188230265-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-782-1093498.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3594376.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-dollars-coin-icon-png-image_850597.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-dollars-coin-icon-png-image_4142461.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-51614549615yuhfzkrlsq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28227%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon-in-trendy-blue-eyes-style-isolated-on-soft-blue-background-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28228%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Income-PNG-Free-Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Income-PNG-Free-Download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\352-3529075_increase-revenue-sales-report-icon-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-earnings-finance-tax-profit-revenue-growthing-money-text-investment-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-rate-increase-icon-money-symbol-stretching-arrow-up-rising-prices-business-cost-sale-cash-salary-investment-growth-133977816.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Income-PNG-Free-Download2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28229%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-media-icons-black-colored-icon-set-vector-36503710.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28230%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Income-PNG-Free-Download3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-rate-increase-icon-money-symbol-stretching-arrow-up-rising-prices-business-cost-sale-cash-salary-investment-growth-1339778161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cost-reduction-outline-icon-clipart-image-isolated-white-background-1744174111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-earnings-finance-tax-profit-revenue-growthing-money-text-investment-thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary-cash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary-day-money.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db\incomeDb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\incomeDb_log.ldf">
+      <DependentUpon>incomeDb.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
